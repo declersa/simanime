@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouve ton Anime</title>
+    <link rel="stylesheet" href="https://anime.skillsative.com/css/style.css">
+</head>
+<body>
+    <div id="landing-page" class="landing-page">
+        <div class="content">
+            <h1>Trouve ton animé parfait en quelques questions</h1>
+            <p>Tu es fan d'animés ou curieux de plonger dans cet univers fascinant ? Grâce à notre questionnaire, nous analysons tes goûts pour te recommander l'anime parfait, qu'il s'agisse d'une aventure épique, d'une histoire romantique ou d'un chef-d'œuvre visuel. Prêt(e) à trouver ta prochaine obsession ? 😊</p>
+            <button onclick="showQuiz()" class="start-button">Commencer l'aventure</button>
+        </div>
+        <div class="anime-decoration">
+            <img src="https://anime.skillsative.com/bg_anime.jpg" alt="Anime Decoration" class="floating">
+        </div>
+    </div>
+
+    <div id="quiz-section" class="quiz-container" style="display: none;">
+        <div class="quiz-form">
+            <h1 class="quiz-title">Trouve ton anime parfait</h1>
+            
+            <form id="quizForm">
+                <div class="question">
+                    <h3>1. Quels genres d'animés préfères-tu ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" name="genre" value="action">
+                            Action
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="adventure">
+                            Aventure
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="romance">
+                            Romance
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="comedy">
+                            Comédie
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="drama">
+                            Drame
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="fantasy">
+                            Fantastique
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="scifi">
+                            Science-fiction
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="horror">
+                            Horreur
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genre" value="mystery">
+                            Mystère
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>2. Durée souhaitée</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="duration" value="long">
+                            Séries longues (>100 épisodes)
+                        </label>
+                        <label>
+                            <input type="radio" name="duration" value="short">
+                            Séries courtes (<25 épisodes)
+                        </label>
+                        <label>
+                            <input type="radio" name="duration" value="movie">
+                            Films
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. Public visé</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="audience" value="children">
+                            Enfants
+                        </label>
+                        <label>
+                            <input type="radio" name="audience" value="teens">
+                            Adolescents
+                        </label>
+                        <label>
+                            <input type="radio" name="audience" value="adults">
+                            Adultes
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Découvrir mes recommandations</button>
+            </form>
+        </div>
+
+        <div class="recommendations-section" style="display: none;">
+            <h2 class="recommendations-title">Recommandations</h2>
+            <div id="recommendations-carousel"></div>
+        </div>
+    </div>
+
+    <script src="https://anime.skillsative.com/js/quiz.js"></script>
+</body>
+</html>
